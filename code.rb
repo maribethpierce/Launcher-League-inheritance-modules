@@ -128,6 +128,28 @@ module Jackable
   end
 end
 
+module Wetable
+  def backstory
+    "Mother was a dolphin."
+  end
+
+  def weakness
+    "Limited excursions on land - gravity's a bitch."
+  end
+
+  def home
+    super + "\'s Oceans"
+  end
+
+  def fans_per_thousand
+    super/100
+  end
+
+  def psychic?
+    true
+  end
+end
+
 class Speedster < SuperHero
   include Speedable
 end
@@ -149,23 +171,5 @@ class JackOfAllTrades < SuperHero
 end
 
 class WaterBased < SuperHero
-  def backstory
-    "Mother was a dolphin."
-  end
-
-  def weakness
-    "Limited excursions on land - gravity's a bitch."
-  end
-
-  def home
-    super + "\'s Oceans"
-  end
-
-  def fans_per_thousand
-    super/100
-  end
-
-  def psychic?
-    true
-  end
+  include Wetable
 end
