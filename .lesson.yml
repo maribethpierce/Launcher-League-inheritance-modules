@@ -1,0 +1,8 @@
+---
+title: "Inheritance & The Launcher League"
+type: "challenge"
+description: "Can you save these `super`-heroes?"
+visibility: "assign"
+tags: "oop, inheritance"
+ignore:
+- "inheritance-launchers-league.md"
